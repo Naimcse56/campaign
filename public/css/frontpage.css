@@ -1,0 +1,134 @@
+
+:root {
+--primary-color: #0A3D62; /* Green */
+--secondary-color: #103cb9d1; /* Dark Green */
+--accent-color: #f9a825;
+--bg-light-gray: #f8f9fa;
+}
+
+body {
+font-family: 'Segoe UI', sans-serif;
+}
+
+.hero {
+background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
+color: white;
+padding: 25px 0 100px 0;
+text-align: center;
+}
+
+.features {
+padding: 60px 0;
+background-color: #f0f6ff;
+}
+
+.feature-card {
+background: white;
+border-radius: 12px;
+box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+padding: 30px;
+transition: transform 0.2s;
+}
+
+.feature-card:hover {
+transform: translateY(-5px);
+}
+
+.feature-icon {
+font-size: 2rem;
+color: var(--primary-color);
+margin-bottom: 15px;
+}
+
+.pricing {
+padding: 60px 0;
+background-color: #f0f6ff;
+}
+
+.pricing-card {
+border-radius: 15px;
+padding: 40px 30px;
+color: white;
+position: relative;
+overflow: hidden;
+transition: transform 0.3s;
+}
+
+.pricing-card:hover {
+transform: scale(1.05);
+}
+
+.bronze {
+background: linear-gradient(135deg, #33b661, #40739e);
+}
+
+.silver {
+background: linear-gradient(135deg, #3e8092, #38768e);
+}
+
+.platinum {
+background: linear-gradient(135deg, #3a7a90, #34b265);
+}
+
+.price-value {
+font-size: 2.5rem;
+font-weight: bold;
+}
+
+.pricing-card ul {
+list-style-type: none;
+padding-left: 0;
+margin-top: 15px;
+}
+
+.pricing-card ul li {
+margin-bottom: 12px;
+display: flex;
+align-items: center;
+}
+
+.pricing-card ul li i {
+color: #fff;
+margin-right: 10px;
+}
+
+.btn-accent {
+background-color: var(--accent-color);
+border: none;
+color: #fff;
+}
+
+.btn-accent:hover {
+background-color: #c17900;
+}
+
+footer {
+background-color: #0f416c;
+border-top: 1px solid #5a9940;
+padding: 5px 0;
+color: #fff;
+}
+
+.footer-link {
+color: #6c757d;
+text-decoration: none;
+}
+
+.footer-link:hover {
+color: var(--primary-color);
+}
+
+.social-icon {
+font-size: 1.2rem;
+margin: 0 10px;
+color: #6c757d;
+}
+
+.social-icon:hover {
+color: var(--primary-color);
+}
+.btn:hover {
+    color: var(--bs-btn-hover-color);
+    background-color: #d7ed9ff7;
+    border-color: var(--bs-btn-hover-border-color);
+}
