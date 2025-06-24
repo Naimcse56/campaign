@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Shop;
-use DataTables;
+use Yajra\DataTables\Facades\DataTables;
 
 class ShopController extends Controller
 {
@@ -21,7 +21,7 @@ class ShopController extends Controller
                             return '<span class="badge bg-warning">In Active</span>';
                         }
                     })
-                    ->addColumn('action', function($row){      
+                    ->addColumn('action', function($row){
                         return view('shop.components.action', compact('row'));
                     })
                     ->rawColumns(['is_active','action'])
@@ -49,7 +49,7 @@ class ShopController extends Controller
                                 'slug' => str_replace(' ','-',strtolower($request->name)).'-'.date('isY'),
                                 'is_active' => $request->is_active,
                             ]);
-            
+
             return redirect()->back()->with('success', 'Added Successfully.');
         } catch (\Exception $e) {
             return redirect()->back()->with('error', $e->getMessage());
@@ -80,7 +80,7 @@ class ShopController extends Controller
                             'phone' => $request->phone,
                             'is_active' => $request->is_active,
                         ]);
-            
+
             return redirect()->back()->with('success', 'Updated Successfully.');
         } catch (\Exception $e) {
             return redirect()->back()->with('error', $e->getMessage());
