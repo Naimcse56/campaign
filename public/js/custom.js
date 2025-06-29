@@ -1,8 +1,8 @@
 
-const deleteData = function(title, route, id) {
+const deleteData = function (title, route, id) {
     Swal.fire({
         title: "Are you sure?",
-        text: "Want to delete this "+title,
+        text: "Want to delete this " + title,
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3852cd",
@@ -17,10 +17,10 @@ const deleteData = function(title, route, id) {
                     _token: APP_TOKEN,
                     id: id,
                 },
-                success: function(response) {
+                success: function (response) {
                     Swal.fire({
                         title: "Success",
-                        text: title+" Deleted",
+                        text: title + " Deleted",
                         icon: "success"
                     }).then((result) => {
                         if (result.isConfirmed) {
@@ -28,17 +28,17 @@ const deleteData = function(title, route, id) {
                         }
                     });
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error(error);
                 }
             });
         }
     });
 };
-const approveData = function(title, route, id) {
+const approveData = function (title, route, id) {
     Swal.fire({
         title: "Are you sure?",
-        text: "You want to approve "+title,
+        text: "You want to approve " + title,
         icon: "warning",
         showCancelButton: true,
         confirmButtonColor: "#3852cd",
@@ -53,10 +53,10 @@ const approveData = function(title, route, id) {
                     _token: APP_TOKEN,
                     id: id,
                 },
-                success: function(response) {
+                success: function (response) {
                     Swal.fire({
                         title: "Success",
-                        text: title+" Approved",
+                        text: title + " Approved",
                         icon: "success"
                     }).then((result) => {
                         // Check if the user clicked "OK"
@@ -66,7 +66,7 @@ const approveData = function(title, route, id) {
                         }
                     });
                 },
-                error: function(error) {
+                error: function (error) {
                     console.error(error);
                 }
             });
@@ -74,24 +74,24 @@ const approveData = function(title, route, id) {
     });
 };
 
-const approveMultipleVoucherData = function(title, route, approval) {
+const approveMultipleItemData = function (title, route, approval) {
     var selectedLanguage = new Array();
     var rejectNote = new Array();
     if (approval == "reject" || approval == "query") {
-        $('input[name="ids"]:checked').each(function() {
+        $('input[name="ids"]:checked').each(function () {
             selectedLanguage.push(this.value);
-            rejectNote.push($('.'+this.value+'_comment').val());
-            console.log($('.'+this.value+'_comment').val());
+            rejectNote.push($('.' + this.value + '_comment').val());
+            console.log($('.' + this.value + '_comment').val());
         });
     } else {
-        $('input[name="ids"]:checked').each(function() {
+        $('input[name="ids"]:checked').each(function () {
             selectedLanguage.push(this.value);
         });
     }
     if (selectedLanguage.length > 0) {
         Swal.fire({
             title: "Are you sure?",
-            text: "You want to "+approval+" "+title,
+            text: "You want to " + approval + " " + title,
             icon: "warning",
             showCancelButton: true,
             confirmButtonColor: "#3852cd",
@@ -108,10 +108,10 @@ const approveMultipleVoucherData = function(title, route, approval) {
                         rejection_comment: rejectNote,
                         approval: approval,
                     },
-                    success: function(response) {
+                    success: function (response) {
                         Swal.fire({
                             title: "Success",
-                            text: title+" Approved",
+                            text: title + " Approved",
                             icon: "success"
                         }).then((result) => {
                             // Check if the user clicked "OK"
@@ -121,13 +121,14 @@ const approveMultipleVoucherData = function(title, route, approval) {
                             }
                         });
                     },
-                    error: function(error) {
+                    error: function (error) {
                         console.error(error);
                     }
                 });
             }
         });
     } else {
-        toastr.error('Select Voucher First!');
-    }    
+        toastr.error('Select Minimum One Item First!');
+    }
 };
+

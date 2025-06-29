@@ -1,0 +1,240 @@
+/* --- Responsive Styles --- */
+@media (max-width: 1200px) {
+    .hero-section h1 { font-size: 3rem; }
+    .hero-section h2 { font-size: 2rem; }
+    .cta-dark-section h2 { font-size: 2.5rem; }
+    .cta-dark-section .lead { font-size: 1.2rem; }
+    .cta-dark-section h3 { font-size: 1.7rem; }
+    section.cta-dark-section a, section.offer-windows a {
+    width: 50%;
+    text-transform: uppercase;
+}
+}
+
+@media (max-width: 991.98px) {
+    .certification-text-content {
+        text-align: center;
+        padding-right: 0;
+        margin-bottom: 40px;
+    }
+    .certification-text-content p {
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 80%;
+    }
+    .certification-text-content h2 {
+        font-size: 2.2rem;
+    }
+    .badges-grid {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    }
+
+    .top-header .container-fluid {
+        flex-direction: column;
+        text-align: center;
+    }
+    .header-logo {
+        margin-bottom: 15px;
+        margin-right: 0;
+    }
+    .header-text-content {
+        margin-bottom: 15px;
+        margin-right: 0;
+        font-size: 0.95rem;
+    }
+    .header-text-content .discount-line {
+        justify-content: center;
+    }
+    .header-call-button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .header-call-button .btn-danger {
+        width: 100%;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .certification-section {
+        padding: 30px 0;
+    }
+    section.offer-windows a {
+    width: 100%;
+    margin-bottom: 0 !important;
+}
+.discount-logo img {
+    width: 160px;
+}
+    .badges-grid {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 15px;
+    }
+
+    .hero-section {
+        padding: 60px 0;
+    }
+    .hero-section h1 {
+        font-size: 2.5rem;
+    }
+    .hero-section h2 {
+        font-size: 1.8rem;
+    }
+    .hero-section .lead {
+        font-size: 1rem;
+    }
+    .hero-form-container {
+        padding: 20px;
+    }
+    .hero-form-container h3 {
+        font-size: 1.5rem;
+    }
+    .hero-logos-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .hero-logo-placeholder {
+        margin-bottom: 10px;
+    }
+
+    .master-linx-section,
+    .window-styles-section,
+    .cta-dark-section,
+    .company-info-section,
+    .testimonial-section {
+        padding: 50px 0;
+    }
+
+    .master-linx-section h2,
+    .window-styles-section h2,
+    .testimonial-section h2 {
+        font-size: 1.8rem;
+        margin-bottom: 30px;
+    }
+
+    .master-linx-section h3 {
+        font-size: 1.5rem;
+        margin-top: 30px;
+    }
+
+    .master-linx-main-image { min-height: 250px; }
+    .master-linx-thumbnail { min-height: 90px; }
+
+    .window-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        gap: 20px;
+    }
+.window-style-icon img {
+    width: 100%;
+    height: 300px;
+    margin-bottom: 20px;
+}
+    .window-style-icon {
+        width: 70px;
+        height: 70px;
+        font-size: 1.2rem;
+    }
+
+    .window-style-item p {
+    font-size: 0.9rem;
+    margin-top: -25px;
+}
+
+    .cta-dark-section h2 { font-size: 2rem; }
+    .cta-dark-section .lead { font-size: 1rem; }
+    .cta-dark-section h3 { font-size: 1.5rem; }
+
+    .cta-dark-section .btn {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .cta-dark-section .d-flex {
+        flex-direction: column;
+    }
+
+    .company-info-icon {
+        width: 120px;
+        height: 120px;
+        font-size: 1.5rem;
+    }
+
+    .company-info-item h4 {
+        font-size: 1.4rem;
+    }
+
+    .testimonial-image-placeholder { min-height: 180px; }
+    .testimonial-text { font-size: 1rem; }
+
+    .offer-windows { padding: 30px 0; }
+    .offer-windows p { font-size: 0.85rem; }
+}
+
+@media (max-width: 575.98px) {
+    .certification-text-content h2 {
+        font-size: 1.8rem;
+    }
+    .certification-text-content p {
+        font-size: 1rem;
+    }
+    .badges-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .hero-section h1 {
+        font-size: 2rem;
+    }
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+    .hero-form-container {
+        padding: 15px;
+    }
+
+    .master-linx-section h2,
+    .window-styles-section h2,
+    .cta-dark-section h2,
+    .company-info-section h2,
+    .testimonial-section h2 {
+        font-size: 1.6rem;
+    }
+
+    .master-linx-section h3 {
+        font-size: 1.3rem;
+    }
+
+    /* .window-grid-container {
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+        gap: 15px;
+    } */
+     .window-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
+    gap: 15px;
+}
+
+    .window-style-icon {
+        width: 100%;
+        height: 100%;
+        /* font-size: 1rem; */
+    }
+
+    /* .window-style-item p {
+        font-size: 0.8rem;
+    } */
+
+    .header-logo {
+        height: 50px;
+    }
+
+    .header-text-content {
+        font-size: 0.85rem;
+    }
+
+    .header-text-content .discount-line .bi {
+        font-size: 1em;
+    }
+
+    .header-call-button .btn-danger {
+        padding: 10px 20px;
+        font-size: 1rem;
+    }
+}

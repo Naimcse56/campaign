@@ -22,12 +22,12 @@
                         </select>
                     </div>
                     <div class="col-12">
-                        <label class="form-label" for="start_date">Start Date </label>
-                        <input type="date" class="form-control" name="start_date" id="start_date" value="">
+                        <label class="form-label" for="start_date">Start Date</label>
+                        <input type="date" class="form-control" name="start_date" id="start_date" value="{{ $campaign->start_date }}">
                     </div>
                     <div class="col-12">
                         <label class="form-label" for="end_date">End Date</label>
-                        <input type="date" class="form-control" name="end_date" id="end_date" value="">
+                        <input type="date" class="form-control" name="end_date" id="end_date" value="{{ $campaign->end_date }}">
                     </div>
                     <div class="col-12">
                         <label class="form-label" for="details">Details </label>

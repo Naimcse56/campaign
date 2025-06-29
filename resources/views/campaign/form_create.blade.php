@@ -27,7 +27,7 @@
                     <li class="breadcrumb-item">
                         <a href="{{ route('dashboard') }}"><i class="bx bx-home-alt"></i></a>
                     </li>
-                    <li class="breadcrumb-item active" aria-current="page">Campaign Form Create</li>
+                    <li class="breadcrumb-item active" aria-current="page">Create/Update Campaign Form</li>
                 </ol>
             </nav>
         </div>
@@ -37,7 +37,7 @@
     <!-- Campaign Details -->
     <div class="row">
         <div class="col-12">
-            <h6 class="mb-0 text-uppercase">Campaign Form Create</h6>
+            <h6 class="mb-0 text-uppercase">Campaign Form</h6>
             <hr />
             <div class="card">
                 <div class="card-body">

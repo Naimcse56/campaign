@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@push('styles')    
+@push('styles')
 @endpush
 @section('content')
 <!--breadcrumb-->
@@ -15,7 +15,7 @@
         </nav>
     </div>
     <div class="ms-auto">
-        
+
     </div>
 </div>
 <div class="row">
@@ -52,7 +52,7 @@
                         </div>
                         <div class="col-12">
                             <div class="d-grid">
-                                <button type="submit" class="btn btn-primary">Update</button>
+                                <button type="submit" class="btn btn-primary">Create</button>
                             </div>
                         </div>
                    </form>

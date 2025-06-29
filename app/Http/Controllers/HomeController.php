@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\Campaign;
+use App\Models\Shop;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,14 +23,8 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Contracts\Support\Renderable
      */
-    public function welcome()
-    {
-        return view('home');
-        // return view('welcome');
-    }
-
     public function dashboard()
     {
-        return view('home');
+        return view('dashboard');
     }
 }

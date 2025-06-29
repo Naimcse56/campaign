@@ -78,7 +78,7 @@ class CampaignController extends Controller
     public function update(Request $request, $id)
     {
         try {
-             $request->validate([
+            $request->validate([
                 'title'      => ['required', 'string', 'max:255'],
                 'shop_id'    => ['required', 'exists:shops,id'],
                 'start_date' => ['required', 'date'],
@@ -167,5 +167,11 @@ class CampaignController extends Controller
         }
 
         return redirect()->back()->with('success', 'Form fields updated successfully.');
+    }
+
+    public function getQr(Campaign $campaign)
+    {
+        $data['campaign'] = $campaign->load('shop:id,name,slug');
+        return view('campaign.get_qr_code', $data);
     }
 }

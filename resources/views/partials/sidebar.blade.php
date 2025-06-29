@@ -33,6 +33,16 @@
                     <a href="{{ route('dashboard') }}" class="list-group-item"><i class="lni lni-dashboard"></i>Summary</a>
                 </div>
             </div>
+            <div class="tab-pane fade {{ Route::is('*') ? 'active show' : '' }}" id="pills-Quote">
+                <div class="list-group list-group-flush">
+                    <div class="list-group-item">
+                        <div class="d-flex w-100 justify-content-between">
+                            <h5 class="mb-0">Quote</h5>
+                        </div>
+                    </div>
+                    <a href="{{ route('quote.index') }}" class="list-group-item"><i class="lni lni-arrow-right"></i>Quote</a>
+                </div>
+            </div>
             <div class="tab-pane fade {{ Route::is('*') ? 'active show' : '' }}" id="pills-Campaign">
                 <div class="list-group list-group-flush">
                     <div class="list-group-item">
